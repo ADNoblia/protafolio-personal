@@ -10,7 +10,7 @@ export class Inicio {
             <section class="inicio-section">
                 <h1 class="name">Alan David Noblia Duarte</h1>
                 <div class="title-background">
-                    <h1 class="title">Portafolio</h1>
+                    <h1 class="title-first">Portafolio</h1>
                     <h1 class="title">Personal</h1>
                 </div>
                 <div class="character-image">
