@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+.app-container {
+  background-color: white;
+  background-image: radial-gradient(#cccccc 1px, transparent 1px);
+  background-size: 20px 20px; 
+  display: flex;
+  padding: 1em;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: white;
+  border: #7f8c99 solid 2px;
+  border-radius: 20px;
+  box-shadow: -5px 5px gold;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  height: 95vh;
+}
+
+.sidebar h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+}
+
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 1.5rem;
+
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar a img {
+  width: 16px;
+  margin-right: 12px;
+}
+
+.sidebar nav a:hover {
+  background: gold;
+  color: white;
+}
+
+.sidebar .cv-button {
+  background: 
+    linear-gradient(white, white) padding-box, /* Fondo */
+    linear-gradient(45deg, #ff0000, #ffd700) border-box; /* Borde */
+  border: 3px solid transparent;
+  border-radius: 15px; /* Funciona con esta técnica */
+}
+
+/* Contenido Principal */
+.main-content {
+  background-color: #fff;
+  border: #7f8c99 solid 2px;
+  box-shadow: -5px 5px #ffb86c;
+  border-radius: 20px;
+  margin-left: 250px; /* Igual al ancho del sidebar */
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Inicio */
+.inicio-section {
+  display: flex;
+  
+}
+
