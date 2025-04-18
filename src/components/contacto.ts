@@ -5,7 +5,7 @@ export class Contacto {
         this.element = document.createElement("section");
         this.element.id = "contacto";
         this.element.innerHTML = `
-            <h1>Bienvenido a mi Portafolio</h1>
+            <h1>Contacto</h1>
             <p>Esta es la sección de inicio.</p>
         `;
     }
